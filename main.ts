@@ -2,7 +2,7 @@
  *
  * Created by: Brandon
  * Created on: Feb 2026
- * This program will randomly turn on neopixels
+ * This program will randomly turn on neopixels.
 */
 
 // variables
@@ -21,6 +21,7 @@ basic.showIcon(IconNames.Happy)
 // Show Neopixel
 input.onButtonPressed(Button.A, function () {
     neopixelStrip.clear()
+    basic.clearScreen()
     lightValue = input.lightLevel()
     if (lightValue > 52) {
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
